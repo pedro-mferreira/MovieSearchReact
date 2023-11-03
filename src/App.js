@@ -9,14 +9,6 @@ import SearchIcon from './search.svg'
 
 const API_URL = 'http://www.omdbapi.com?apikey=59d4efdf'
 
-const movie1 = {
-    "Title": "Barbie",
-    "Year": "2023",
-    "imdbID": "tt1517268",
-    "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
-}
-
 
 const App = () => {
 
@@ -33,7 +25,7 @@ const App = () => {
     }
 
     useEffect(() => {
-        searchMovies('Barbie');
+        searchMovies('');
     }, [])
 
     return (
